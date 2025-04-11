@@ -59,8 +59,8 @@ order by total_revenue desc;
 
 /*
 Análise Escrita:
-Os produtos identificados na análise de Pareto indica que 20 unidades do total de produtos, representando 
-cerca de 25% do estoque total, geram aproximadamente 50% da receita total da empresa, o que indica a importância
+Os produtos identificados na análise de Pareto indica que 20 unidades do total de produtos (que representam 
+cerca de 25% do estoque total) geram aproximadamente 50% da receita total da empresa. Isso mostra a importância
 de priorizar esses produtos para reposição de estoque.
 
 Deve-se priorizar, principalmente, os 5 primeiros produtos "Côte de Blaye", "Thüringer Rostbratwurst", 
