@@ -2,7 +2,7 @@
 
 Este projeto apresenta uma análise exploratória do estoque da base de dados Northwind, utilizando SQL para extrair insights sobre lucratividade, sazonalidade, reposição e otimização do estoque.
 
-## 🔍 Objetivo
+## 🔍 Objetivo 
 
 O objetivo é compreender a situação atual do estoque da empresa fictícia Northwind, identificar os produtos mais lucrativos, apontar desequilíbrios entre demanda e estoque, e propor melhorias para a gestão.
 
