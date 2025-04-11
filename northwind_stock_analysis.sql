@@ -95,7 +95,6 @@ Dentre esses produtos, "Côte de Blaye", o produto de maior faturamento da empre
 com metade da quantidade de unidades suficientes para atender a demanda do ano anterior.
 
 "Tarte au sucre", quarto produto de maior faturamento, está com cerca de 25% da quantidade necessária.
-anterior
 
 "Camembert Pierrot", quinto produto de maior faturamento, com metade da quantidade necessária.
 
