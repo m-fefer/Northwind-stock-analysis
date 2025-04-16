@@ -33,8 +33,8 @@ O objetivo é compreender a situação atual do estoque da empresa fictícia Nor
 ## 📈 Principais Insights
 
 - **20 produtos** representam a maior parte da receita.
+- Alguns produtos têm **excesso de estoque** sem relevância para o faturamento, incluindo 3 dos 5 produtos de maior faturamento da empresa.
 - **28 produtos ativos** estão com estoque insuficiente para atender à demanda do mesmo período do ano anterior.
-- Alguns produtos têm **excesso de estoque** sem relevância para o faturamento.
 - A demanda é **mais alta entre janeiro e abril**, o que exige atenção no planejamento.
 
 ## 🗂️ Organização
