@@ -28,34 +28,34 @@ GROUP BY p.product_name
 ORDER BY receita DESC;
 
 -- Percentual móvel
-with sales as (
-	select 
+WITH sales AS (
+	SELECT 
 		p.product_id,
 		p.product_name,
-		sum(od.unit_price * od.quantity * (1 - od.discount)) as total_revenue
-	from order_details od
-	inner join products p on od.product_id = p.product_id
-	group by p.product_id, p.product_name
+		sum(od.unit_price * od.quantity * (1 - od.discount)) AS total_revenue
+	FROM order_details od
+	INNER JOIN products p ON od.product_id = p.product_id
+	GROUP BY p.product_id, p.product_name
 ),
 
-sales_ranked as (
-	select 
+sales_ranked AS (
+	SELECT 
 		s.product_id,
 		s.product_name,
 		s.total_revenue,
-		s.total_revenue * 100.0 / sum(s.total_revenue) over () as pct_total,
-		sum(s.total_revenue) over (order by s.total_revenue desc) * 100.0 / sum(s.total_revenue) over () as running_pct
-	from sales s
+		s.total_revenue * 100.0 / sum(s.total_revenue) over () AS pct_total,
+		sum(s.total_revenue) over (ORDER BY s.total_revenue DESC) * 100.0 / sum(s.total_revenue) over () AS running_pct
+	FROM sales s
 )
 
-select 
+SELECT 
 	product_id,
 	product_name,
 	total_revenue,
 	running_pct
-from sales_ranked
-where running_pct <= 80
-order by total_revenue desc;
+FROM sales_ranked
+WHERE running_pct <= 80
+ORDER BY total_revenue DESC;
 
 /*
 Análise Escrita:
